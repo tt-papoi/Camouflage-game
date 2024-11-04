@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/btnBack_SettingScreen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:layout_marginEnd="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_back"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:background="@drawable/information_commander_layout_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Switch
+            android:id="@+id/switchMusic"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/music_txt"
+            android:checked="true"
+            android:thumbTint="@color/switch_states"
+            android:trackTint="@color/switch_states"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        <Switch
+            android:id="@+id/switchSFX"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sfx_txt"
+            android:checked="true"
+            android:thumbTint="@color/switch_states"
+            android:trackTint="@color/switch_states"
+            app:layout_constraintEnd_toEndOf="@+id/switchMusic"
+            app:layout_constraintTop_toBottomOf="@+id/switchMusic"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/login_signUp_layout"
+            android:layout_width="350dp"
+            android:layout_height="37.5dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnLogin_SettingScreen"
+                android:layout_width="150dp"
+                android:layout_height="37.5dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_login"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnSignUp_SettingScreen"
+                android:layout_width="150dp"
+                android:layout_height="37.5dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/btn_sign_up"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signOut_changePassword_layout"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchSFX"
+            tools:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/btnUpLoadData_SettingScreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnChangePassword_SettingScreen"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/btnChangePassword_SettingScreen"
+                app:srcCompat="@drawable/upload"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnDownloadData_SettingScreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnSignOut_SettingScreen"
+                app:layout_constraintStart_toStartOf="@+id/btnSignOut_SettingScreen"
+                app:srcCompat="@drawable/download"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnSignOut_SettingScreen"
+                android:layout_width="150dp"
+                android:layout_height="37.5dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_sign_out"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnChangePassword_SettingScreen"
+                android:layout_width="150dp"
+                android:layout_height="37.5dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/btn_change_password"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/btnExitFromGameScreen"
+            android:layout_width="150dp"
+            android:layout_height="37.5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/btn_exit"
+            tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

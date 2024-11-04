@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:background="@drawable/signup_form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491"
+        tools:ignore="VisualLintBounds">
+
+        <ImageButton
+            android:id="@+id/btnBack_SignUpScreen"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_back"
+            tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnSignUp_SignUpScreen"
+            android:layout_width="150dp"
+            android:layout_height="37.5dp"
+            android:layout_marginTop="24dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRetypePassword_SignUpScreen"
+            app:layout_constraintStart_toStartOf="@+id/editTextRetypePassword_SignUpScreen"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRetypePassword_SignUpScreen"
+            app:srcCompat="@drawable/btn_sign_up"
+            tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextUsername_SignUpScreen"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="33dp"
+            android:autofillHints=""
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextRetypePassword_SignUpScreen"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="@string/retype_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPassword_SignUpScreen"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword_SignUpScreen"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword_SignUpScreen" />
+
+        <EditText
+            android:id="@+id/editTextPassword_SignUpScreen"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp"
+            android:autofillHints=""
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUsername_SignUpScreen"
+            app:layout_constraintHorizontal_bias="0.543"
+            app:layout_constraintStart_toStartOf="@+id/editTextUsername_SignUpScreen"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUsername_SignUpScreen" />
+
+        <TextView
+            android:id="@+id/txtLoginNow"
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/login_now"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

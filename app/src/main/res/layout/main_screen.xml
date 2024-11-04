@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:ignore="ExtraText">
+
+    <ImageButton
+        android:id="@+id/btnSetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_setting"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <ImageView
+            android:id="@+id/imageViewCommander_mainScreen"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/commander01"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnCommander"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/btn_play"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnCommander"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/btn_commander"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnGuide"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCommander"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/btn_guide"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/information_layout"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/information_layout_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds,TextSizeCheck">
+
+        <ProgressBar
+            android:id="@+id/expProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/levelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Level: "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/expProgressBar"
+            app:layout_constraintTop_toBottomOf="@+id/expProgressBar"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/expTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/exp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expProgressBar"
+            app:layout_constraintTop_toBottomOf="@+id/expProgressBar"
+            tools:ignore="SmallSp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

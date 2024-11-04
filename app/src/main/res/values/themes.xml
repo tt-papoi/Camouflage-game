@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CamouflageGame" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="Theme.CamouflageGame" parent="Base.Theme.CamouflageGame" />
+</resources>

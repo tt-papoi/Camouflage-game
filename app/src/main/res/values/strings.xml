@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">CamouflageGame</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="af53bc">AF53BC</string>
+    <string name="retype_password">retype password</string>
+    <string name="email">email</string>
+    <string name="new_password">new password</string>
+    <string name="old_password">old password</string>
+    <string name="exp">EXP: --/--</string>
+    <string name="total_misses">Total Misses</string>
+    <string name="total_hits">Total Hits</string>
+
+    <string name="commander01_description">
+    <![CDATA[
+        <html><head><style>
+            body { text-align: justify; margin-bottom: 20px; padding: 16px; font-size: 16px; color: #FFFFFF; line-height: 1.6; }
+            ul { list-style-type: disc; padding-left: 15px; }
+            li.first { list-style-type: disc; margin-bottom: 15px; }
+            li.second { margin-bottom: 8px; list-style-type: square; margin-left: 12px}
+            li.third { margin-bottom: 8px; list-style-type: none;}
+        </style></head><body>
+        <ul>
+            <li class=\'first\'><strong>Skill Introduction:</strong><br/>
+            <li class=\'second\'> <strong>Skill 1:</strong> Shoot 2 cells - need 2 mana
+            <li class=\'second\'> <strong>Skill 2:</strong> Scan 9 cells (3x3) - need 3 mana <br/>
+            <li class=\'second\'> <strong>Skill 3:</strong> Shoot any 4 cells - need 5 mana <br/>
+            <li class=\'second\'> <strong>Ulti:</strong> Shoot any 6 cells - need 7 mana <br/>
+            </ul></body></html>
+    ]]>
+    </string>
+
+
+    <string name="commander02_description">
+    <![CDATA[
+        <html><head><style>
+            body { text-align: justify; margin-bottom: 20px; padding: 16px; font-size: 16px; color: #FFFFFF; line-height: 1.6; }
+            ul { list-style-type: disc; padding-left: 15px; }
+            li.first { list-style-type: disc; margin-bottom: 15px; }
+            li.second { margin-bottom: 8px; list-style-type: square; margin-left: 12px}
+            li.third { margin-bottom: 8px; list-style-type: none;}
+        </style></head><body>
+        <ul>
+            <li class=\'first\'><strong>Skill Introduction:</strong><br/>
+            <li class=\'second\'> <strong>Skill 1:</strong> Shoot 2 cells - need 2 mana
+            <li class=\'second\'> <strong>Skill 2:</strong> Scan 9 cells (3x3) - need 3 mana <br/>
+            <li class=\'second\'> <strong>Skill 3:</strong> Shoot any 4 cells - need 5 mana <br/>
+            <li class=\'second\'> <strong>Ulti:</strong> Shoot. If you hit an enemy, it will cause the enemy\'\s weapon to explode - need 6 mana <br/>
+            </ul></body></html>
+    ]]>
+</string>
+
+    <string name="commander03_description">
+    <![CDATA[
+        <html><head><style>
+            body { text-align: justify; margin-bottom: 20px; padding: 16px; font-size: 16px; color: #FFFFFF; line-height: 1.6; }
+            ul { list-style-type: disc; padding-left: 15px; }
+            li.first { list-style-type: disc; margin-bottom: 15px; }
+            li.second { margin-bottom: 8px; list-style-type: square; margin-left: 12px}
+            li.third { margin-bottom: 8px; list-style-type: none;}
+        </style></head><body>
+        <ul>
+            <li class=\'first\'><strong>Skill Introduction:</strong><br/>
+            <li class=\'second\'> <strong>Skill 1:</strong> Shoot 2 cells - need 2 mana
+            <li class=\'second\'> <strong>Skill 2:</strong> Scan 9 cells (3x3) - need 3 mana <br/>
+            <li class=\'second\'> <strong>Skill 3:</strong> Shoot any 4 cells - need 5 mana <br/>
+            <li class=\'second\'> <strong>Ulti:</strong> Fires a series of bullets in a vertical line until it hits an enemy - need 10 mana <br/>
+            </ul></body></html>
+    ]]>
+</string>
+
+
+    <string name="commander04_description">
+    <![CDATA[
+        <html><head><style>
+            body { text-align: justify; margin-bottom: 20px; padding: 16px; font-size: 16px; color: #FFFFFF; line-height: 1.6; }
+            ul { list-style-type: disc; padding-left: 15px; }
+            li.first { list-style-type: disc; margin-bottom: 15px; }
+            li.second { margin-bottom: 8px; list-style-type: square; margin-left: 12px}
+            li.third { margin-bottom: 8px; list-style-type: none;}
+        </style></head><body>
+        <ul>
+            <li class=\'first\'><strong>Skill Introduction:</strong><br/>
+            <li class=\'second\'> <strong>Skill 1:</strong> Shoot 2 cells - need 2 mana
+            <li class=\'second\'> <strong>Skill 2:</strong> Scan 9 cells (3x3) - need 3 mana <br/>
+            <li class=\'second\'> <strong>Skill 3:</strong> Shoot any 4 cells - need 5 mana <br/>
+            <li class=\'second\'> <strong>Ulti:</strong> Shoot 9 cells around (3x3) - need 10 mana <br/>
+            </ul></body></html>
+    ]]>
+</string>
+
+
+    <string name="commander05_description">
+    <![CDATA[
+        <html><head><style>
+            body { text-align: justify; margin-bottom: 20px; padding: 16px; font-size: 16px; color: #FFFFFF; line-height: 1.6; }
+            ul { list-style-type: disc; padding-left: 15px; }
+            li.first { list-style-type: disc; margin-bottom: 15px; }
+            li.second { margin-bottom: 8px; list-style-type: square; margin-left: 12px}
+            li.third { margin-bottom: 8px; list-style-type: none;}
+        </style></head><body>
+        <ul>
+            <li class=\'first\'><strong>Skill Introduction:</strong><br/>
+            <li class=\'second\'> <strong>Skill 1:</strong> Shoot 2 cells - need 2 mana
+            <li class=\'second\'> <strong>Skill 2:</strong> Scan 9 cells (3x3) - need 3 mana <br/>
+            <li class=\'second\'> <strong>Skill 3:</strong> Shoot any 4 cells - need 5 mana <br/>
+            <li class=\'second\'> <strong>Ulti:</strong> Fires a series of bullets in a straight horizontal line until it hits an enemy - need 10 mana <br/>
+            </ul></body></html>
+    ]]>
+</string>
+
+</resources>
